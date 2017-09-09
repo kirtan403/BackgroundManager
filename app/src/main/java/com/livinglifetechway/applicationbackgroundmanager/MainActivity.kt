@@ -14,12 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         // using isBackground() method
         Handler().postDelayed(Runnable {
-            Toast.makeText(this@MainActivity, "in background? " + BackgroundManager.isBackground(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, "Currently in background? " + BackgroundManager.isBackground(), Toast.LENGTH_SHORT).show()
         }, 2000)
 
         // using isForeground method
         Handler().postDelayed(Runnable {
-            Toast.makeText(this@MainActivity, "in foreground? " + BackgroundManager.isForeground(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, "Currently in foreground? " + BackgroundManager.isForeground(), Toast.LENGTH_SHORT).show()
         }, 4000)
     }
 }
