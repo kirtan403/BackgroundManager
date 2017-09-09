@@ -1,7 +1,7 @@
 # BackgroundManager
 A lightweight background manager for Android to know whether your app is in the background or foreground
 
-When at least one of your app's activity is in the foreground, your app is assumed to be in the foreground. And when none of your activities are in the foreground, your app is assumed to be in the background. BackgroundManager keeps track of no of activities in the foreground, and decides if app is the foreground or background.
+When at least one of your app's activity is in the foreground, your app is assumed to be in the foreground. And when none of your activities are in the foreground, your app is assumed to be in the background. BackgroundManager keeps track of no of activities in the foreground, and decides if an app is in the foreground or background.
 
 Inspired from Doug's commit [here](https://github.com/CodingDoug/white-label-event-app/commit/3adbbb62e2c94feb14fb709af02da1b4742915c1?diff=unified) and from my own similiar approach [here](https://livinglifetechway.com/keep-your-firebase-realtime-database-connections-to-minimum/).  
 
