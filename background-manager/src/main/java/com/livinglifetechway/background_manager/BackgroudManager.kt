@@ -7,8 +7,6 @@ import android.os.Bundle
 
 object BackgroundManager : Application.ActivityLifecycleCallbacks {
 
-    private val TAG = BackgroundManager::class.java.simpleName
-
     private var counter = 0
     private var isBackground = true
 
