@@ -5,6 +5,7 @@ import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.livinglifetechway.background_manager.BackgroundManager
+import com.livinglifetechway.k4kotlin.toastNow
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // using isBackground() method
-        Handler().postDelayed(Runnable {
-            Toast.makeText(this@MainActivity, "Currently in background? " + BackgroundManager.isBackground(), Toast.LENGTH_SHORT).show()
+        Handler().postDelayed({
+            toastNow("Currently in background? " + BackgroundManager.isBackground())
         }, 2000)
 
         // using isForeground method
-        Handler().postDelayed(Runnable {
-            Toast.makeText(this@MainActivity, "Currently in foreground? " + BackgroundManager.isForeground(), Toast.LENGTH_SHORT).show()
+        Handler().postDelayed({
+            toastNow("Currently in foreground? " + BackgroundManager.isForeground())
         }, 4000)
     }
 }
