@@ -26,7 +26,7 @@ In project level gradle file:
 In your app build.gradle file: 
 
     dependencies {
-        compile 'com.github.kirtan403:BackgroundManager:1.0.2'
+        compile 'com.github.kirtan403:BackgroundManager:1.1.0'
     }
     
 Now, initialize `BackgroundManager` in your Application class in `onCreate`:
